@@ -174,7 +174,7 @@ app_ui = ui.page_navbar(
         ui.p(
             "This is an interactive website focusing on drug consumption."
             " All information are real based and not synthetic."
-            " Artificial intelligence was used to determine the coordinates for the map, to generate text for the Personalities & Drugs page and the page with information about drugs, to clean up the code, and to add comments to it."
+            " Artificial intelligence was used to determine coordinates for the map, assist with map creation, help synchronize two dropdown menus, assist with colors, synchronize the explanation box, create a checkbox for a specific chart, generate text for the Personalities and Drugs page and the Drug Information page, clean up the code, and add comments to it."
         ),
 
         ui.h3("About original dataset"),
