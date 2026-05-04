@@ -1,0 +1,114 @@
+This notepad serves as a list of commands I used during this project, most of them were used to save time and not to create the whole assignment. AI, which was used is Claude
+
+prompt:
+
+give me coordinates for these countries
+
+COUNTRY_COORDS = {
+    "UK":                  ,
+    "USA":                 ,
+    "Canada":              ,
+    "Australia":           ,
+    "Republic of Ireland": ,
+    "New Zealand":         ,
+    "Other":               ,
+}
+
+prompt:
+
+Hello there, I want to put a leaflet map on my dashboard like in App11b but instead of just showing the country name in the popup I want a small bar chart inside it showing the age and gender breakdown for that country. Is that possible? How would I do it? Tell me the process and where could I learn more about it?
+
+prompt:
+
+I have two dropdowns and I don't want the user to be able to pick the same option in both. Like if they pick Age in the first one, Age shouldn't appear in the second. Is there a way to do that?
+
+prompt:
+
+Do you have ideas, how to keep the same colours for each chart?
+
+prompt:
+I want a little explanation box that updates depending on which personality trait the user picks. So if they pick Neuroticism it shows what Neuroticism means. Can I do something like that with Shiny? Do you have ideas how to do it? Just tell me the approach how to do it.
+
+prompt:
+I want a checkbox that controls whether a second drug appears alongside the first one on a specific chart, but not on the others. Two checkboxes, one per chart. How would the server logic look? Just tell me the logic and the steps I need to take.
+
+
+prompt:
+
+Fill in each section with short sentences based on the dataset I sourced from this website:
+https://www.kaggle.com/datasets/obeykhadija/drug-consumptions-uci
+
+Also:
+You can use information from these resources
+
+McCrae, R. R., & Costa, P. T. (1987). Validation of the five-factor model of personality across instruments and observers. Journal of Personality and Social Psychology, 52(1), 81–90.
+
+Patton, J. H., Stanford, M. S., & Barratt, E. S. (1995). Factor structure of the Barratt Impulsiveness Scale. Journal of Clinical Psychology, 51(6), 768–774.
+
+Zuckerman, M. (1994). Behavioral expressions and biosocial bases of sensation seeking. Cambridge University Press.
+
+TRAIT_INFO = {
+    "Neuroticism": {"model": "","summary": "","high":    "","low":     "",},
+    "Extraversion": {"model": "","summary": "","high":    "","low":     "",},
+    "Openness": {"model": "","summary": "","high":    "","low":     "",},
+    "Agreeableness": {"model": "","summary": "","high":    "","low":     "",},
+    "Conscientiousness": {"model": "","summary": "", "high":    "", "low": "", },
+    "Impulsivity": { "model": "","summary": "", "high":    "","low":   "", },
+    "Sensation Seeking": {"model": "",  "summary": "", "high":    "",low":     "",
+    },
+}
+
+prompt:
+
+Fill each section, except  "image": "images/alcohol.jpg","image_credit": "" based on UK legislation and based on these links
+
+https://www.talktofrank.com/
+https://www.nhs.uk/
+https://www.drugwise.org.uk/
+https://www.gov.uk/penalties-drug-possession-dealing
+https://www.gov.uk/government/publications/controlled-drugs-list--2 
+
+DRUG_INFO = {
+    "Alcohol":                  {"category": "", "legal": "", "description": "", "risks": "", "image": "images/alcohol.jpg",                  "image_credit": ""},
+    "Amphetamines":             {"category": "", "legal": "", "description": "", "risks": "", "image": "images/amphetamines.jpg",             "image_credit": ""},
+    "Amyl Nitrite":             {"category": "", "legal": "", "description": "", "risks": "", "image": "images/amyl_nitrite.jpg",             "image_credit": ""},
+    "Benzodiazepines":          {"category": "", "legal": "", "description": "", "risks": "", "image": "images/benzodiazepines.jpg",          "image_credit": ""},
+    "Caffeine":                 {"category": "", "legal": "", "description": "", "risks": "", "image": "images/caffeine.jpg",                 "image_credit": ""},
+    "Cannabis":                 {"category": "", "legal": "", "description": "", "risks": "", "image": "images/cannabis.jpg",                 "image_credit": ""},
+    "Chocolate":                {"category": "", "legal": "", "description": "", "risks": "", "image": "images/chocolate.jpg",                "image_credit": ""},
+    "Cocaine":                  {"category": "", "legal": "", "description": "", "risks": "", "image": "images/cocaine.jpg",                  "image_credit": ""},
+    "Crack Cocaine":            {"category": "", "legal": "", "description": "", "risks": "", "image": "images/crack_cocaine.jpg",            "image_credit": ""},
+    "Ecstasy":                  {"category": "", "legal": "", "description": "", "risks": "", "image": "images/ecstasy.jpg",                  "image_credit": ""},
+    "Heroin":                   {"category": "", "legal": "", "description": "", "risks": "", "image": "images/heroin.jpg",                   "image_credit": ""},
+    "Ketamine":                 {"category": "", "legal": "", "description": "", "risks": "", "image": "images/ketamine.jpg",                 "image_credit": ""},
+    "Legal Highs":              {"category": "", "legal": "", "description": "", "risks": "", "image": "images/legal_highs.jpg",              "image_credit": ""},
+    "LSD":                      {"category": "", "legal": "", "description": "", "risks": "", "image": "images/lsd.jpg",                      "image_credit": ""},
+    "Methamphetamine":          {"category": "", "legal": "", "description": "", "risks": "", "image": "images/methamphetamine.jpg",          "image_credit": ""},
+    "Magic Mushrooms":          {"category": "", "legal": "", "description": "", "risks": "", "image": "images/magic_mushrooms.jpg",          "image_credit": ""},
+    "Nicotine":                 {"category": "", "legal": "", "description": "", "risks": "", "image": "images/nicotine.jpg",                 "image_credit": ""},
+    "Volatile Substance Abuse": {"category": "", "legal": "", "description": "", "risks": "", "image": "images/volatile_substance_abuse.jpg", "image_credit": ""},
+}
+
+Can you go through my app.py and clean it up? Don't change logic or variable names, just make it readable and add necessary comments.
+
+Add a references block at the top of the file, organised by category: Shiny docs, lectures, other libraries, techniques beyond lectures.
+
+Links I used:
+https://shiny.posit.co/py/
+https://shiny.posit.co/py/components/
+https://shiny.posit.co/py/layouts/
+https://shiny.posit.co/py/templates/
+https://shiny.posit.co/py/components/inputs/select-single/
+https://shiny.posit.co/py/api/core/ui.update_select.html
+https://shiny.posit.co/py/layouts/arrange/
+https://shiny.posit.co/py/components/outputs/ui/
+https://shiny.posit.co/py/api/core/reactive.effect.html
+https://shiny.posit.co/py/api/core/reactive.calc.html
+https://plotly.com/python/plotly-express/
+https://matplotlib.org/stable/api/pyplot_summary.html
+https://ipyleaflet.readthedocs.io/en/latest/
+https://pandas.pydata.org/docs/
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
+https://docs.python.org/3/library/base64.html
+https://developer.mozilla.org/en-US/docs/Web/URI/Schemes/data
+Class lectures ShinyLecture1, ShinyLecture2, ShinyLecture3
